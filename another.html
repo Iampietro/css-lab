@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="formStyle.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <section>
-            <div class="row">
-                <div class="column full">
-                    <h1>Trying out some tags.</h1>
-                </div>
-            </div>
+            <h2>Trying out some tags.</h2>
             <div class="row">
                 <div class="column third">
                     <article>
@@ -49,6 +47,7 @@
             </div>
         </section>
         <section>
+            <h2>Form</h2>
             <div class="row">
                 <div class="column full">
                     <div class="form-style-2">
@@ -61,21 +60,21 @@
                                     <span>First Name<span class="required">*</span></span>
                                 </label>
                                 <input type="text" class="input-field"
-                                 name="FName" placeholder="e.g.: Homer" required>
+                                 id="FName" placeholder="e.g.: Homer" required>
                             </div>
                             <div>
                                 <label for="LName">
                                     <span>Last Name<span class="required">*</span></span>
                                 </label>
                                 <input type="text" class="input-field"
-                                 name="LName" placeholder="e.g.: Simpson" required>
+                                 id="LName" placeholder="e.g.: Simpson" required>
                             </div>
                             <div>
                                 <label for="Mail">
                                     <span>Email<span class="required">*</span></span>
                                 </label>
                                 <input type="email" class="input-field" 
-                                name="Mail" placeholder="e.g.: coolestMail@onEarth" required>
+                                id="Mail" placeholder="e.g.: coolestMail@onEarth" required>
                             </div>
                             <div>
                                 <label>
@@ -85,7 +84,7 @@
                             </div>
                             <div>
                                 <label for="FSport"><span>Favourite Sport</span></label>
-                                <select name="FSport" class="select-field">
+                                <select id="FSport" class="select-field">
                                     <option value="tenis">Tenis</option>
                                     <option value="futbol">Futbol</option>
                                     <option value="chess">Chess</option>
@@ -100,7 +99,7 @@
                                     </span>
                                 </label>
                                 <textarea cols="30" rows="5" class="textarea-field" 
-                                 maxlength="150" name="UserBio"
+                                 maxlength="150" id="UserBio"
                                   placeholder="I was born in Ohio..." required></textarea>
                             </div>
                             <div id="btns">
