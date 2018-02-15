@@ -29,9 +29,10 @@ tr:nth-child(odd) {
     background-color: #876666;
 }
 
-img {
-    width: 350px;
-    height: 350px;
+.same {
+    width: 360px;
+    height: 320px;
+    border: 1px solid black;
 }
 
 article {
@@ -43,6 +44,13 @@ h1, h2 {
 
 }
 
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width : 1200px; 
+}
+
 .column {
     float: left;
     padding-left: 1rem;
@@ -50,8 +58,21 @@ h1, h2 {
 }
 
 
-.column.third { width: 33.3%; }
+.column.third {
+    width: 33.3%;
+}
 
-body {
-    background-color: #bfb5b5;
+.column.full { 
+    width: 100%;
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+p {
+    text-align: center;
 }

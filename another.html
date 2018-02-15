@@ -3,35 +3,120 @@
 <head>
     <meta charset="utf-8">
     <title>Several Tags</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formStyle.css">
 </head>
 <body>
-    <section>
-        <h1>Trying out some tags.</h1>
-        
-        <article class="column third">
-            <h2>The <code>img</code> tag: </h2>
-            <p>Here we have a Fibonacci's tattoo.</p>
-            <img src="images/Fibonacci.jpg" alt="Fibonacci">
-        </article>
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="column full">
+                    <h1>Trying out some tags.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column third">
+                    <article>
+                        <h2>The <code>img</code> tag: </h2>
+                        <p>Here we have a Fibonacci's tattoo.</p>
+                        <img class="same" src="images/Fibonacci.jpg" alt="Fibonacci">
+                    </article>
+                </div>
 
-        <article class="column third">
-            <h2>The <code>video</code> tag:</h2>
-            <p>And here, Popeye running for President.</p>
-            <video src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls>
-              Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
-              download this video from the <a href="https://archive.org/details/Popeye_forPresident" target="_blank">Internet Archive</a>.
-            </video>
-        </article>
+                <div class="column third">
+                    <article>
+                        <h2>The <code>video</code> tag:</h2>
+                        <p>And here, Popeye running for President.</p>
+                        <video class="same" src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls>
+                          Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
+                          download this video from the <a href="https://archive.org/details/Popeye_forPresident" target="_blank">Internet Archive</a>.
+                        </video>
+                    </article>
+                </div>
 
-        <article class="column third">
-            <h2>The <code>sound</code> tag:</h2>
-            <p>Finally, some dolphins singing a blue blues</p>
-            <audio controls>
-                <source src="http://soundbible.com/mp3/Dolphins-SoundBible.com-1774583018.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-            </audio>
-        </article>
-    </section>
+                <div class="column third">
+                    <article>
+                        <h2>The <code>audio</code> tag:</h2>
+                        <p>Finally, some dolphins singing a blue blues</p>
+                        <audio controls>
+                            <source src="http://soundbible.com/mp3/Dolphins-SoundBible.com-1774583018.mp3" type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                        </audio>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column full">
+                    <div class="form-style-2">
+                        <div class="form-style-2-heading">
+                            Provide your information
+                        </div>
+                        <form action="#" method="post">
+                            <div>
+                                <label for="FName">
+                                    <span>First Name<span class="required">*</span></span>
+                                </label>
+                                <input type="text" class="input-field"
+                                 name="FName" placeholder="e.g.: Homer" required>
+                            </div>
+                            <div>
+                                <label for="LName">
+                                    <span>Last Name<span class="required">*</span></span>
+                                </label>
+                                <input type="text" class="input-field"
+                                 name="LName" placeholder="e.g.: Simpson" required>
+                            </div>
+                            <div>
+                                <label for="Mail">
+                                    <span>Email<span class="required">*</span></span>
+                                </label>
+                                <input type="email" class="input-field" 
+                                name="Mail" placeholder="e.g.: coolestMail@onEarth" required>
+                            </div>
+                            <div>
+                                <label>
+                                    <span>Birthday<span class="required">*</span></span>
+                                </label>
+                                <input type="date" class="input-field" name="LName" required>
+                            </div>
+                            <div>
+                                <label for="FSport"><span>Favourite Sport</span></label>
+                                <select name="FSport" class="select-field">
+                                    <option value="tenis">Tenis</option>
+                                    <option value="futbol">Futbol</option>
+                                    <option value="chess">Chess</option>
+                                    <option value="beer">Drink beer really fast</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="UserBio">
+                                    <span>
+                                        Tell us about yourself
+                                        <span class="required">*</span>
+                                    </span>
+                                </label>
+                                <textarea cols="30" rows="5" class="textarea-field" 
+                                 maxlength="150" name="UserBio"
+                                  placeholder="I was born in Ohio..." required></textarea>
+                            </div>
+                            <div id="btns">
+                                <label>
+                                    <span>&nbsp;</span>
+                                    <button type="submit" class="btnSubmit">Submit</button>
+                                </label>
+                                <label>
+                                    <span>&nbsp;</span>
+                                    <button type="reset" class="btnClean">Clean</button>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
