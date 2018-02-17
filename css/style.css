@@ -69,6 +69,10 @@ html { font-size: 100%; }
     width: 33.3%;
 }
 
+.column.two-thirds { 
+    width: 66.7%; 
+}
+
 .column.full { 
     width: 100%;
 }
@@ -115,14 +119,11 @@ article {
     display: inline;
 }
 
-h1, h2 {
+h1, h2, p {
     text-align: center;
 
 }
 
-p {
-    text-align: center;
-}
 
 ol {
     margin:0;
@@ -132,4 +133,49 @@ ol {
 }
 ol  li {
      padding: 2px 5px;              
+}
+
+.forSp {
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1000;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+
+.forSp:hover {
+    opacity: 1;
+}
+
+.position {
+    position: relative;
+}
+
+.info {
+    color: #fff;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+  margin-left: -30px;
+}
+
+.forSp.fade-in .info {
+  margin-left: 0;
+}
+
+.forSp:hover .info {
+  margin-left: 0;
 }
