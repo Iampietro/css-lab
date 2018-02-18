@@ -4,7 +4,116 @@
   box-sizing: border-box;
 }
 
-html { font-size: 100%; }
+html { 
+    font-size: 100%; 
+}
+
+@media only screen and (min-width: 401px){
+
+    img { 
+        width: 330px;
+        height: 320px;
+        border: 1px solid black;
+      }
+    .forSp {
+        background-color: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        opacity: 0;
+        z-index: 1000;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+    }
+
+    .forSp:hover {
+        opacity: 1;
+    }
+
+    .position {
+        position: relative;
+    }
+
+    .info {
+        color: #fff;
+        font-family: arial, helvetica, sans-serif;
+        font-weight: bold;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+        margin-left: -30px;
+    }
+
+    .forSp.fade-in .info {
+        margin-left: 0;
+    }
+
+    .forSp:hover .info {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 348px) and (max-width: 400px){
+
+    img { 
+        width: 330px;
+        height: 320px;
+        border: 1px solid black;
+      }
+
+    .forSp {
+        background-color: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        z-index: 1000;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+    }
+
+    .forSp:hover {
+        opacity: 1;
+    }
+
+    .position {
+        position: relative;
+    }
+
+    .info {
+        color: #fff;
+        font-family: arial, helvetica, sans-serif;
+        font-weight: bold;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+        margin-left: -30px;
+    }
+
+    .forSp.fade-in .info {
+        margin-left: 0;
+    }
+
+    .forSp:hover .info {
+        margin-left: 0;
+    }
+}
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) { 
@@ -26,11 +135,7 @@ html { font-size: 100%; }
 }
 
 @media (max-width: 768px) {
-  img { 
-    width: 330px;
-    height: 320px;
-    border: 1px solid black;
-  }
+  
 
   [class*="col"] {
         width: 100%;
@@ -53,14 +158,59 @@ html { font-size: 100%; }
     }
 }
 
+@media only screen and (min-width: 640px) and (max-width: 800px){
+    .same {
+        width: 170px;
+        height: 170px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px){
+    .same {
+        width: 240px;
+        height: 240px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px){
+    .same {
+        width: 270px;
+        height: 270px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px){
+    .same {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (min-width: 1301px) {
+    .same {
+        width: 360px;
+        height: 320px;
+        border: 1px solid black;
+    }
+}
 
 
-.column { margin-bottom: 1.5rem; }
+.column { 
+    margin-bottom: 1.5rem; 
+}
 
 .container {
-  margin: 0 auto;
-  width: 90%;
-  max-width : 1200px; 
+    margin: 0 auto;
+    width: 90%;
+    max-width : 1200px; 
 }
 
 
@@ -109,11 +259,6 @@ tr:nth-child(odd) {
     background-color: #876666;
 }
 
-.same {
-    width: 360px;
-    height: 320px;
-    border: 1px solid black;
-}
 
 article {
     display: inline;
@@ -145,7 +290,7 @@ ol  li {
     position: absolute;
     opacity: 0;
     z-index: 1000;
-  -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
@@ -160,22 +305,23 @@ ol  li {
     position: relative;
 }
 
+
 .info {
     color: #fff;
-  font-family: arial, helvetica, sans-serif;
-  font-weight: bold;
-  -webkit-transition: all 0.5s ease-in-out;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
-  margin-left: -30px;
+    margin-left: -30px;
 }
 
 .forSp.fade-in .info {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .forSp:hover .info {
-  margin-left: 0;
+    margin-left: 0;
 }
