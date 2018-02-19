@@ -180,6 +180,7 @@ input[placeholder], textarea[placeholder] {
 }
 
 #btns button {
-    margin: auto;
+    margin: 5px auto;
     display: block;
+
 }
